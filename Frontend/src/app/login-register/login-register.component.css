@@ -44,7 +44,7 @@ section{
   
   .texto h2 {
     font-size: 30px;
-    color: #000;
+    color: #EBF0E4;
     line-height: 1;
     text-align: left;
     margin-left: 40px;
@@ -105,7 +105,6 @@ section{
     font-size: 2em;
     margin-top: 3%;
     padding-bottom: 4%;
-  
   
   }
   
@@ -193,7 +192,7 @@ section{
   }
   
   .crear-cuenta p a {
-    color: fuchsia;
+    color: var(--b);
     font-weight: 600px;
     text-decoration: none;
   
