@@ -57,4 +57,13 @@ router.delete('/:id', (req, res) => {
     });
 });
 
+router.get('/check', (req, res) =>{
+  controller.checkUser(req.query.email, req.query.password)
+      .then((sesion)=>{
+          response.success(req, res,sesion,201)
+      })
+      .catch((e)=>{
+          response.error(req, res,"informacion incorrecta",e)
+      })
+})
 module.exports = router;

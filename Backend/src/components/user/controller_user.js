@@ -71,10 +71,31 @@ async function deleteUser(id) {
   }
 }
 
+async function checkUser(email, password) {
+  try {
+      console.log(email,password)
+      let user = await store.getUser({email: email, password: password});
+      if(email && password && user != null){
+          let sesion = {
+              name: user.nombre,
+              id: user.id,
+              session: true
+          };
+          console.log(sesion)
+          return sesion;
+      } else {
+          throw new Error("datos incorrectos");
+      }
+  } catch (error) {
+      throw error;
+  }
+}
+
 module.exports = {
   addUser,
   getUser,
   getUsers,
   updateUser,
   deleteUser,
+  checkUser
 };

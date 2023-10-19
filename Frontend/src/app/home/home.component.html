@@ -1,0 +1,50 @@
+
+
+
+<section class="section1">
+    <div class="contenedor">
+        <div class="texto">
+            <p>"Descubre, Reserva y Disfruta: Tu Experiencia Gastronómica Perfecta Comienza Aquí."</p>
+        </div>
+        <div class="imagen">
+            <img src="../../assets/Imagesection1.png" alt="Imagen">
+        </div>
+    </div>
+    <div class="scroll">
+        <img src="../../assets/Header_Scroll_Defaultsection1_scroll.png" alt="">
+    </div> 
+    <div class="condimentos">
+        <img src="../../assets/Imagessection1_float.png" alt="">
+    </div> 
+    <img class="vector1" src="../../assets/Mintvecto1.png" alt=""> 
+</section>
+
+<section class="Section2">
+    <div class="TitlePopular">
+        <h2>Restaurantes populares</h2>
+        <div></div>
+    </div>
+    <div class="CarrouselProducts">
+        <div class="Cards" >
+            <div class="Cardsproducts" *ngFor="let Card of Cards">
+                <div class="ImageProduct">
+                    <div class="ImageCarProduct">
+                        <img src="../../assets/image 1defaultRest.png" alt="">
+                    </div>
+                    <div class="textCards">
+                        <h2>{{Card.nombre}}</h2>
+                    </div>
+                    <div class="textCards">
+                        <p>{{Card.tipoDeCocina}}</p>
+                    </div>
+                    <div class="Locate"><img src="../../assets/Locate.svg" alt="">
+                        <p class="Textlocate"> {{Card.direccion}}</p>
+                    </div>
+                    <div class="ButtonShowMore"><a routerLink="/product/{{Card._id}}">Ver más</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
