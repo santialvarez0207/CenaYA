@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { LoginRegisterComponent } from './login-register/login-register.component';
+
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
+  { path: 'login', component: LoginRegisterComponent ,}
 ];
 
 @NgModule({
@@ -11,3 +14,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
