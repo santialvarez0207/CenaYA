@@ -5,7 +5,7 @@ const router = require('./network/routes');
 const app = express();
 const cors = require("cors");
 
-/*
+
 const whitelist = process.env.URL_ACEPTED || ['http://localhost:8080/', 'http://localhost:4200/'];
 
 const options = {
@@ -37,7 +37,6 @@ app.set('trust proxy', true);
 app.use(cors(options));
 
 app.use(bodyParser.json());
-*/
 
 // configuraciones de escucha
 app.set("port", process.env.PORT || 3000);
