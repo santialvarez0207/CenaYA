@@ -1,2 +1,62 @@
+<<<<<<< HEAD
 <router-outlet></router-outlet>
 
+=======
+<nav class="BodyNav">
+  <div class="NavFirstHalf">
+      <div class="logo">
+          <a routerLink="/home"><img src="../assets/Logo.png" alt=""></a>
+      </div>
+      <div class="Search">
+          <a routerLink="/seeker">Buscar</a>
+      </div>
+      <div class="Credit">
+          <a routerLink="/">-----</a>
+      </div>
+      <div class="Credit">
+        <a routerLink="/">-----</a>
+    </div>
+  </div>
+  <div class="NavSecondHalf">
+      <div class="Log-in" id="Log-in">
+          <a routerLink="/login">Iniciar sesión</a>
+      </div>
+      <div class="Log-in" id="User">
+          <a routerLink="/perfil-user/{{idUser}}">{{name}}</a>
+          <i (click)="CloseSession()" class="material-icons" style="color: var(--sw);">logout</i>
+      </div>
+      <div class="Log-in" id="Restaurant">
+          <a routerLink="/profile-Restaurant/{{idRestaurant}}">{{user}}</a>
+          <i (click)="CloseSession()" class="material-icons" style="color: var(--sw);">logout</i>
+      </div>
+  </div>
+</nav>
+
+<div class="router"><router-outlet></router-outlet></div>
+<footer class="BodyFooter">
+  <div class="Logotipo"><img src="../assets/CreditCarLogotipo.svg" alt=""></div>
+  <div class="Info-Contact">
+      <div class="TitleContact">
+          <h2>Contactanos</h2>
+      </div>
+      <div class="TextContact">
+          <ol>
+              <li class="Tel">Tel: +1 408 XXX XXXX</li>
+              <li class="Email">Correo Electronico: xxxxxxx@gmail.com</li>
+          </ol>
+      </div>
+  </div>
+  <div class="Links">
+      <div class="TitleLinks">
+          <h2>Enlaces</h2>
+      </div>
+      <div class="TextLinks">
+          <ol>
+              <li><a href=""><p>Sobre nosotros</p></a></li>
+              <li><a href=""><p>Escógenos</p></a></li>
+              <li><a href=""><p>Carros populares</p></a></li>
+          </ol>
+      </div>
+  </div>
+</footer>
+>>>>>>> c66f0e1b143bd7a7165f535412e1e6d66bf6db32
